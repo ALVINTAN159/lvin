@@ -8,9 +8,6 @@ from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
 from lists_teletips.emojis_teletips import *
 from PIL import Image, ImageDraw, ImageFont
-from telethon.sync import TelegramClient
-from telethon.tl.functions.photos import DeletePhotosRequest
-from telethon.tl.types import InputPhoto
 import datetime
 import pytz
 import asyncio
