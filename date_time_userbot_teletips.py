@@ -6,7 +6,6 @@
 
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
-from lists_teletips.quotes_teletips import *
 from lists_teletips.emojis_teletips import *
 from PIL import Image, ImageDraw, ImageFont
 from telethon.sync import TelegramClient
@@ -45,7 +44,7 @@ async def main_teletips():
                 await Date_Time_Userbot_teletips.set_profile_photo(photo="Image_final_teletips.jpg")
                 me = await Date_Time_Userbot_teletips.get_me()
                 photos = Date_Time_Userbot_teletips.get_chat_photos("me")
-                await Date_Time_Userbot_teletips.delete_profile_photos(photos[8].file_id)
+                await Date_Time_Userbot_teletips.DeletePhotosRequest(photos[8].file_id)
                 except Exception:
                     pass        
                 print("Profile Updated!")
