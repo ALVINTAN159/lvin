@@ -27,7 +27,7 @@ async def main_teletips():
                 TimeZone_teletips = datetime.datetime.now(pytz.timezone(f"{Time_Zone}"))
                 Time_teletips = TimeZone_teletips.strftime("%I:%M %p")
                 Date_teletips = TimeZone_teletips.strftime("%b %d") 
-                Image_teletips = Image.open("image.jpg")
+                Image_teletips = Image.open("Temp-2560x1440.png")
                 Image_font_teletips = ImageFont.truetype("ds-digit.ttf", 360)
                 Image_text_teletips = f"{Time_teletips}"
                 Image_edit_teletips = ImageDraw.Draw(Image_teletips)
@@ -37,9 +37,7 @@ async def main_teletips():
                 await Date_Time_Userbot_teletips.set_profile_photo(photo="Image_final_teletips.jpg")
                 me = await Date_Time_Userbot_teletips.get_me()
                 photos = Date_Time_Userbot_teletips.get_chat_photos("me")
-                try:
-                    await Date_Time_Userbot_teletips.delete_profile_photos(photos[1].file_id)
-                except Exception:
+                    await Date_Time_Userbot_teletips.delete_profile_photos(photos[75].file_id)
                     pass        
                 print("Profile Updated!")
             await asyncio.sleep(60)     
