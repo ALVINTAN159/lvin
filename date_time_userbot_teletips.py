@@ -45,7 +45,7 @@ async def main_teletips():
                 me = await Date_Time_Userbot_teletips.get_me()
                 photos = Date_Time_Userbot_teletips.get_chat_photos("me")
                 try:
-                await Date_Time_Userbot_teletips.DeletePhotosRequest(photos[8].file_id)
+                    await Date_Time_Userbot_teletips.delete_profile_photos(photos[1].file_id)
                 except Exception:
                     pass        
                 print("Profile Updated!")
