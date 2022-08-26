@@ -28,7 +28,6 @@ async def main_teletips():
     try:
         while True:
             if Date_Time_Userbot_teletips.is_connected:
-                Quotes_teletips = random.choice(quotes_teletips)
                 Emojis_teletips = random.choice(emojis_teletips)
                 TimeZone_teletips = datetime.datetime.now(pytz.timezone(f"{Time_Zone}"))
                 Time_teletips = TimeZone_teletips.strftime("%I:%M %p")
