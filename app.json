@@ -13,18 +13,22 @@
     "env": {
         "API_ID": {
             "description": "Get from my.telegram.org/apps",
+            "value": "14771029",
             "required": true
         },
         "API_HASH": {
             "description": "Get from my.telegram.org/apps",
+            "value": "aadfc65b33278f6548104180f7e7b4ad",
             "required": true
         },
         "SESSION_STRING": {
             "description": "A valid Pyrogram session name",
+            "value": "BQBIhvSWaaG7aMRxFUVPYOGzEoas7aI_fyOFg2VvUXj6-dPKhwBLNOrrI8nqJBgwJ0PAxCs2FQ-gAKO-DQwgVzt1ogvvNswzESF3FWPdfU00IffYfoTgc2u8_lN_uemCA4lnAiIBaeOeVsUf9BpUE7N2V9k6tnt137_X0SYF02k1zOIhBu9jnWRwUvbkKzT6EZlt4wu8Z9VO_x5gxzsRFMiPf3M7kub5KkWXzUWP7V_9QcXTnb2a0KfQSEjLB6edMmw0C57aR2jkOCz7U_FSeQHpbiqkcVMKgz-06qDVn_30dz6jaj0OpwGXJPYGHGtPF1-YC8SBiWiQ3k0YF8D46kUkfDvGSAA",
             "required": true
         },
         "TIME_ZONE": {
             "description": "Your time zone (Example: Asia/Kolkata)",
+            "value": "Asia/Singapore",
             "required": true
         }
     },
